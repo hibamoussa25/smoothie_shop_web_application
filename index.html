@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<!--
+	Hiba Moussa (ID# 1002180541)
+	Professor Sarrat Scott
+	INSY 4315-001
+	Project 2
+-->
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Berry Bliss Smoothies</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script type="text/JavaScript">
+			var keyName, keyValue, cookieText, expires, timer, iValue;
+			var cookieDate = new Date();
+          
+			function createCookie(keyName, keyValue, expDays) 
+			{
+			  cookieDate.setTime(cookieDate.getTime() + (expDays * 24 * 60 * 60 * 1000));
+			  expires = "expires=" + cookieDate.toUTCString();
+			  document.cookie = keyName + "=" + keyValue + ";" + expires ;
+			}
+
+			function readCookie(keyName) 
+			{
+			  var key = keyName + "=";
+			  var cookieArray = document.cookie.split(';');
+			  for(var i = 0; i < cookieArray.length; i++) 
+			  {
+			    cookieText = cookieArray[i];
+			    while (cookieText.charAt(0) == ' ') 
+			    {
+			      cookieText = cookieText.substring(1);
+			    }
+			    if (cookieText.indexOf(key) == 0) 
+			    {
+			      return cookieText.substring(key.length, cookieText.length);
+			    }
+			  }
+			  return "";
+			}
+
+			function checkCookie() 
+			{
+			  var user = readCookie("userName");
+			  if (user != "") 
+			  {
+			    document.getElementById("dynamicdiv").innerText = "Welcome, " + user + ". We hope you will enjoy your Berry Bliss Smoothies experience!";
+			  	document.getElementById("dynamica").innerText = "Please click here if you are not " + user + "!";
+			  }
+
+			  else
+			  {
+			  	document.getElementById("dynamicdiv").innerText = "Want a more personalized experience on our website?";
+			  	document.getElementById("dynamica").innerText = "Please click here to provide your name.";
+			  }
+
+			}
+
+			function displayCookie()
+			{
+				user = prompt("Please enter your name: ");
+				if (user != "" && user != null)
+				{
+					createCookie("userName", user, 21);
+					document.getElementById("dynamicdiv").innerText = "Welcome, " + user + ". We hope you will enjoy your Berry Bliss Smoothies experience!";
+			  		document.getElementById("dynamica").innerText = "";
+
+				}
+			}
+
+			function startTimer()
+			{
+				timer = window.setTimeout("genNumber()", 3000);
+			}
+
+			function genNumber()
+			{
+				iValue = Math.ceil(Math.random( ) * 10);
+				if(iValue % 3 == 0 )
+				{
+					if(confirm("You have been randomly selected to participate in a customer satisfaction survey. Would you like to participate?")){
+						openSurvey();
+					}
+				}
+			}
+
+			function openSurvey()
+			{
+				open("survey.html");
+			}
+
+		</script>
+	</head>
+
+
+	<body onload="startTimer(), checkCookie()">
+		<h1>Berry Bliss Smoothies&reg;</h1>
+		<h2>Home Page</h2>
+
+		<nav> 
+			<table>
+				<tbody>
+					<tr>
+						<td>
+							<b><a href="index.html" class="nav">Home</a></b>
+						</td>
+						<td>
+							<b><a href="product_hxm.html" class="nav">Product</a></b>
+						</td>
+						<td>
+							<b><a href="contact_hxm.html" class="nav">Contact Us</a></b>
+						</td>
+						<td>
+							<b><a href="about_hxm.html" class="nav">About Us</a></b>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</nav>
+
+		<hr>
+
+		<div>
+   	    	<p>Berry Bliss Smoothies is a family-owned company located in Arlington, TX. We make fresh and delicious smoothies using locally sourced fruit. Our mission is to reduce food waste while offering healthy and flavorful drinks. The company partners with local farms and uses eco-friendly packaging to support the planet. Each smoothie is made with care, combining nutrition, freshness, and creativity. Berry Bliss believes that doing good for the environment can taste good too.</p>
+   		</div>
+
+   		<img src="images/logo.png" alt="Berry Bliss Smoothies Logo" class="logo1"/>
+
+   		<div style="float: right; padding-left: 2%; padding-right: 7%;">
+   			<p id="dynamicdiv"></p>
+   			<a href="javascript:displayCookie()" id="dynamica"></a>
+   			<p class="extra">A top-rated DFW favorite known for our fresh, flavorful smoothies!</p>
+   		</div>
+
+   		<img src="images/berrybliss.png" alt="Berry Bliss Fruits & Ice Image" class="logo2"/>
+
+	</body>
+</html>
+

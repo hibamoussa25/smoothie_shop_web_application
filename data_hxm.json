@@ -1,0 +1,72 @@
+[
+	{
+		"prodID": 1001, 
+		"prodImg": "images/1001.png",
+		"prodName": "Raspberry & Blueberry Smoothie",
+		"prodDesc": "Berry Bliss classic smoothie made with raspberries and blueberries. Perfect for any hot day!",
+		"prodPrice": 7.55
+	},
+	{
+		"prodID": 1002,
+		"prodImg": "images/1002.png",
+		"prodName": "Peach Perfection Smoothie",
+		"prodDesc": "The sweet flavor of summer peaches with raspberries and plum, all in one refreshing drink.",
+		"prodPrice": 6.99
+	},
+	{
+		"prodID": 1003,
+		"prodImg": "images/1003.png",
+		"prodName": "Blueberry Burst Smoothie",
+		"prodDesc": "A thick, icy blend of sweet blueberries and a hint of creamy vanilla.",
+		"prodPrice": 5.95
+	},
+	{
+		"prodID": 1004, 
+		"prodImg": "images/1004.png",
+		"prodName": "Strawberry Banana Swirl Smoothie",
+		"prodDesc": "Creamy banana and fresh strawberries swirled together for a smooth, sweet treat.",
+		"prodPrice": 6.55
+	},
+	{
+		"prodID": 1005, 
+		"prodImg": "images/1005.png",
+		"prodName": "Kiwi Cucumber Smoothie",
+		"prodDesc": "Tangy kiwi and cool cucumber blended for the ultimate crisp, hydrating refresher.",
+		"prodPrice": 6.00
+	},
+	{
+		"prodID": 1006, 
+		"prodImg": "images/1006.png",
+		"prodName": "Sweet Cherry Berry Smoothie",
+		"prodDesc": "A cold, sweet treat made with ripe cherries, raspberries, and blueberries.",
+		"prodPrice": 12.55
+	},
+	{
+		"prodID": 1007, 
+		"prodImg": "images/1007.png",
+		"prodName": "Mocha Twist Smoothie",
+		"prodDesc": "Sweet milk chocolate mocha blended with ice and coffee. The perfect caffeinated drink on a hot day.",
+		"prodPrice": 7.55
+	},
+	{
+		"prodID": 1008, 
+		"prodImg": "images/1008.png",
+		"prodName": "Tropical Mango Passion Smoothie",
+		"prodDesc": "A sweet, tangy fusion of sun-kissed mango, exotic passionfruit, and creamy yogurt swirls.",
+		"prodPrice": 7.99
+	},
+	{
+		"prodID": 1009, 
+		"prodImg": "images/1009.png",
+		"prodName": "Berry Bliss Tote Bag",
+		"prodDesc": "Carry your groceries or gear with flair! Heavy-duty tote featuring our unique, stylized fruit splash graphic.",
+		"prodPrice": 19.99
+	},
+	{
+		"prodID": 1010, 
+		"prodImg": "images/1010.png",
+		"prodName": "Berry Bliss Tumbler",
+		"prodDesc": "This 24 oz reusable, insulated tumbler is designed for style and will keep your drinks hot or cold for hours.",
+		"prodPrice": 24.99
+	}
+]

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<!--
+	Hiba Moussa (ID# 1002180541)
+	Professor Sarrat Scott
+	INSY 4315-001
+	Project 1
+-->
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8"/>
+	<title>Berry Bliss Smoothies</title>
+	<style> 
+			body			{background-color: #FFE4E1; margin-left: 10%; margin-right: 10%;}
+			div				{width: 72%; float: left;}
+			img				{width: 25%; height: auto; padding-left: 1%; border-radius: 10%;}
+			p   			{font-size: 1.4em; text-align: justify; padding: 3%; color: #606290;}
+			h1				{text-align: center; color: #BA2048; font-family: Copperplate;}
+			h2				{text-align: center; color: #BA2048; font-family: Avenir;}
+			label			{font-size: 1em;}
+			table			{max-width: 75%; margin-left: auto; margin-right: auto;}
+			td 				{color: #606290; white-space: nowrap;}
+			th 				{text-align: center; color: #BA2048; font-size: 1.3em; padding-bottom: 12px; font-family: Avenir;}
+			th 				{text-align: center;}
+			li				{color: #606290; font-size: 1.2em;}
+			.right 			{text-align: right;}
+			.center  		{text-align: center;}
+			.divcss 		{margin-left: auto; margin-right: auto; float: none;}
+			.submitreset 	{width: 75px; height: 30px;}
+
+	</style>
+</head>
+
+<body>
+	<header>
+	<h1 class="center">Thank you for choosing Berry Bliss Smoothies&reg;</h1>
+	<div class="center">
+   	    <p>You have been randomly selected to participate in our Customer Satisfaction Survey. Please tell us a little bit about yourself by filling in the requested information at the top of the survey, then respond to the survey opinion statements based on your experiences with Berry Bliss Smoothies. To show our appreciation, we will send you a $5 Berry Bliss Smoothies eGift Certificate via e-mail.</p>
+   	</div>
+   	
+   	<img src="images/logo.png" alt="Berry Bliss Smoothies Logo"/>
+    </header>
+
+   	<hr>
+
+   	<form>
+   		<table class="center">
+   			<thead>
+   				<tr>
+   					<th colspan="4">Personal Information</th>
+   				</tr>
+   			</thead>
+
+   			<tbody>
+   				<tr>
+   					<td class="right"><label>First Name:</label></td>
+   					<td><input name="fname" type="text" size="30" maxlength="29" required autofocus></td>
+   					<td class="right"><label style="padding-left: 40px;">Last Name:</label></td>
+   					<td><input name="lname" type="text" size="30" maxlength="39" required></td>
+   				</tr>
+   				<tr>
+   					<td class="right"><label>Email Address:</label></td>
+   					<td><input name="email" type="Email" size="30" maxlength="29" required placeholder="for example, Joe@abc.com"></td>
+   					<td class="right"><label style="padding-left: 40px;">Phone Number <em>(optional)</em>:</label></td>
+   					<td><input name="phone" type="tel" size="30" maxlength="12" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="###-###-####"></td>
+   				</tr>
+   				<tr>
+   					<td class="right"><label>Age Group:</label></td>
+   					<td>
+   						<input name="age" type="radio" value="Under 21" required><label>Under 21</label>
+   						<input name="age" type="radio" value="21-40"><label>21-40</label>
+   						<input name="age" type="radio" value="Over 40"><label>Over 40</label>
+   					</td>
+   				</tr>
+   			</tbody>
+   		</table>
+   		<hr>
+   		<h2 class="center">Please respond to the opinion statements using the following scale:</h2>
+
+   		<div class="divcss" style="width: 30%;">
+   		<ul style="list-style-type: none;">
+				<li>1 = Strongly Agree</li>
+				<li>2 = Somewhat Agree</li>
+				<li>3 = Neither Agree nor Disagree</li>
+				<li>4 = Somewhat Disagree</li>
+				<li>5 = Strongly Disagree</li>
+		</ul>
+		</div>
+
+		<div class="divcss" style="width: 60%;">
+		<ul style="list-style-type: circle;">
+			<li>
+				Berry Bliss Smoothies products are always fresh.
+				<select name="Selection1" id="numbers1">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select>
+			</li>
+			<li>
+				Berry Bliss Smoothies products have an appealing aroma.
+				<select name="Selection2" id="numbers2">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select>
+			</li>
+			<li>
+				Berry Bliss Smoothies products are reasonably priced.
+				<select name="Selection3" id="numbers3">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select>
+			</li>
+			<li>
+				Berry Bliss Smoothies products are of the highest quality.
+				<select name="Selection4" id="numbers4">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select>
+			</li>
+			<li>
+				Overall, I am very satisfied with Berry Bliss Smoothies products.
+				<select name="Selection5" id="numbers5">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select>
+			</li>
+		</ul>
+		</div>
+		<p class="center">
+				<input class="submitreset" type="submit" value="Submit"/>
+				<input class="submitreset" type="reset" value="Reset"/>
+			</p>
+   	</form>
+
+</body>
+
+</html>

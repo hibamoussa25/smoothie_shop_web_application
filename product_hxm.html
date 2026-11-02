@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<!--
+	Hiba Moussa (ID# 1002180541)
+	Professor Sarrat Scott
+	INSY 4315-001
+	Project 3
+-->
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Our Products</title>
+		<link rel="stylesheet" type="text/css" href="style2.css">
+	</head>
+	
+	<body>
+		<h1>Berry Bliss Smoothies&reg;</h1>
+   		<h2>Our Products</h2>
+
+   		<nav> 
+			<table class="navtable">
+				<tbody>
+					<tr>
+						<td>
+							<b><a href="index.html" class="nav">Home</a></b>
+						</td>
+						<td>
+							<b><a href="product_hxm.html" class="nav">Product</a></b>
+						</td>
+						<td>
+							<b><a href="contact_hxm.html" class="nav">Contact Us</a></b>
+						</td>
+						<td>
+							<b><a href="about_hxm.html" class="nav">About Us</a></b>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</nav>
+
+		<hr>
+
+		<img src="images/logo.png" alt="Berry Bliss Smoothies Logo" class="logo"/> 
+
+		<div class="div2">
+			<p>Berry Bliss Smoothies proudly presents our signature product lineup, featuring the refreshing drinks and accessories our customers love most. Each item is crafted to highlight the bold, vibrant flavors that define our brand. Explore our best-selling smoothies and fan favorites below.</p>
+		</div> 
+
+		<hr> 
+
+		<form id = "prodForm">
+   	  	<table class="border">
+   	  		<thead>
+   	  			<tr>
+   	  			     <td><a id="sortID" href="javascript:sortID()">Product ID</a></td>
+				     <td></td>
+				     <td><a id="sortName" href="javascript:sortName()">Product Name</a></td>
+				     <td>Description</td>
+				     <td><a id="sortPrice" href="javascript:sortPrice()">Price</a></td>
+				     <td>Quantity</td>
+   	  			</tr>
+   	  			<div class="div">(Click a Column Heading to Sort)</div>
+   	  		</thead>
+
+   	  		<tbody id="tbodyRows">
+   	  			<!-- Table rows will be built dynamically using javascript and pulling from the JSON Product file.-->
+   	  		</tbody>
+   	  	</table>
+
+   	  	<p style="text-align: center;">
+   	  		<input type="button" value="Submit" onClick="javascript:confirmQty( )"> 
+   	  		<input type="button" value="Reset" onClick="javascript:confirmCancel( )"> 
+   	  	</p>
+   	  </form>
+
+   	  <script src="main.js"></script>
+
+	</body>
+</html>
